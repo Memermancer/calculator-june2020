@@ -25,3 +25,83 @@ boogerButton.addEventListener('click', () => {
     // update the textContent of the span
     boogerSpan.textContent = sum;
 });
+//get dom elements
+//get sub-input-1
+const subInput1 = document.getElementById('sub-input-1');
+//get sub-input-2
+const subInput2 = document.getElementById('sub-input-2');
+//get sub-button
+const subButton = document.getElementById('sub-button');
+//get sub-result span
+const subSpan =document.getElementById('sub-result');
+
+//intialize state
+
+//set event handler to the button
+subButton.addEventListener('click', () => {
+    //inside handler
+    //make sure we have inputs
+    //console.log(subInput1, subInput2);
+    //make sure we have span
+    //console.log(subSpan);
+    //makes sure we have .value of inputs
+    const subValue1 = subInput1.value;
+    const subValue2 = subInput2.value;
+    //subtract values
+    const sub = Number(subValue1) - Number(subValue2);
+    //update textContent of span
+    subSpan.textContent = sub;
+});
+
+
+//get dom elements
+//get mul-input-1
+const mulInput1 = document.getElementById('mul-input-1');
+//get mul-input-2
+const mulInput2 = document.getElementById('mul-input-2');
+//get mul-button
+const mulButton = document.getElementById('mul-button');
+//get mul-result span
+const mulSpan = document.getElementById('mul-result');
+
+//intialize state
+
+//set event handler to the button
+mulButton.addEventListener('click', () => {
+    //inside handler
+    //make sure we have inputs
+    //make sure we have span
+    //make sure we have value of inputs
+    const mulValue1 = mulInput1.value;
+    const mulValue2 = mulInput2.value;
+    //muliply values
+    const mul = Number(mulValue1) * Number(mulValue2);
+    //update textContent of span
+    mulSpan.textContent = mul;
+});
+
+//get dom elements
+//get div-input-1
+const divInput1 = document.getElementById('div-input-1');
+//get div-input-2
+const divInput2 = document.getElementById('div-input-2');
+//get div-button
+const divButton = document.getElementById('div-button');
+//get div-result span
+const divSpan = document.getElementById('div-result');
+
+//intialize state
+
+//set event handler to the button
+divButton.addEventListener('click', () => {
+    //inside handler
+    //make sure we have inputs
+    //make sure we have span
+    //make sure we have value of inputs
+    const divValue1 = divInput1.value;
+    const divValue2 = divInput2.value;
+    //divide values
+    const div = Number(divValue1) / Number(divValue2);
+    //update textContent of span
+    divSpan.textContent = div;
+});
